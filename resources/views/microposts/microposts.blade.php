@@ -28,10 +28,10 @@
                                     <button type="submit" class="btn btn-error btn-sm normal-case" 
                                         onclick="return confirm('Delete id = {{ $micropost->id }} ?')">Delete</button>
                                 </form>
-                                {{-- お気に入り／お気に入り解除ボタン --}}
-                                @include('micropost_favorite.favorite_button')
                             @endif
                         </div>
+                        {{-- お気に入り／お気に入り解除ボタン --}}
+                        @include('micropost_favorite.favorite_button')
                     </div>
                 </li>
             @endforeach
